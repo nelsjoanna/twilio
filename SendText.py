@@ -10,6 +10,6 @@ client = Client(account_sid, auth_token)
 message = client.messages.create(
     to="[phone number]", 
     from_="+12408337709",
-    body="Just built my first SMS app using Twilio",)
+    body="Would highly recommend Twilio!",)
 
 print(message.sid)
