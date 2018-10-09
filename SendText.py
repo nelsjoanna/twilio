@@ -1,14 +1,14 @@
 from twilio.rest import Client
 
 # Your Account SID from twilio.com/console
-account_sid = "ACfe1e178ecc6c9236796d1cfccda868bf"
+account_sid = "Axxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 # Your Auth Token from twilio.com/console
-auth_token  = "fa1c9ff3fb857a1af2e811f516c86d3b"
+auth_token  = '[AuthToken]'
 
 client = Client(account_sid, auth_token)
 
 message = client.messages.create(
-    to="+17038015678", 
+    to="[phone number]", 
     from_="+12408337709",
     body="Just built my first SMS app using Twilio",)
 
